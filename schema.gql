@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @cacheControl(maxAge: Int, scope: CacheControlScope, inheritMaxAge: Boolean) on FIELD_DEFINITION | OBJECT | INTERFACE | UNION | QUERY
+
+type MesssageGQLSchema {
+  message: String
+}
+
+type Query {
+  getMesssage(message: String!): MesssageGQLSchema!
+}
+
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
